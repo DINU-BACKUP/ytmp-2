@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/*.js",
+      "src": "youtube-scraper/*.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "/api/$1.js"
+      "src": "/youtube-scraper/(.*)",
+      "dest": "/youtube-scraper/$1.js"
     }
   ]
 }
